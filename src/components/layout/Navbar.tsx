@@ -18,10 +18,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center nav-logo">
-            <img src="./src/public/logo.png" className="w-20 ml-10" />
+            <img src="./src/public/logo.png" className="w-20" />
             <span className="font-display font-black flex items-center gap-2">
-              LION SEC
-              <span className="logo-dot" />
+              LionSec
             </span>
           </div>
 

@@ -19,7 +19,7 @@ export default function Footer() {
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-accent transition-colors"><Linkedin size={16} /></a>
               <a href="#" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-accent transition-colors"><Facebook size={16} /></a>
-              <a href="#" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-accent transition-colors"><Instagram size={16} /></a>
+              <a href="https://www.instagram.com/_lionsec_/" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-accent transition-colors"><Instagram size={16} /></a>
             </div>
           </div>
 

@@ -10,18 +10,24 @@ const tools = [
 
 export default function StackTools() {
   return (
-    <section id="stack" className="py-20 bg-surface border-y border-border overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <div className="text-center">
-          <p className="tech-label text-accent mb-4">Stack de Ferramentas & Soluções</p>
-          <h2 className="text-2xl font-display font-bold text-light">Tecnologias que operamos diariamente</h2>
+  <section id="stack" className="py-24 bg-surface border-y border-white/5 overflow-hidden relative">
+  <div className="section-container mb-20 px-4">
+        <div className="max-w-3xl">
+          <div className="flex items-center gap-4 mb-6">
+            <div className="w-8 h-[1px] bg-accent" />
+            <p className="tech-label">Stack de Operações & Parceiros</p>
+          </div>
+          <h2 className="text-3xl md:text-5xl font-black text-light leading-[1.1] uppercase tracking-tighter">
+            TECNOLOGIAS DE <br />
+            <span className="text-outline">PRIMEIRA LINHA.</span>
+          </h2>
         </div>
       </div>
       
       {/* Infinite Marquee Slider */}
-      <div className="relative flex overflow-hidden">
+      <div className="relative flex overflow-hidden group py-15">
         <motion.div 
-          className="flex whitespace-nowrap gap-16 items-center py-4"
+          className="flex whitespace-nowrap gap-32 items-center"
           animate={{ x: [0, -1000] }}
           transition={{ 
             duration: 30, 
@@ -30,9 +36,9 @@ export default function StackTools() {
           }}
         >
           {[...tools, ...tools, ...tools].map((tool, i) => (
-            <div key={`${tool.name}-${i}`} className="flex items-center gap-4 group opacity-40 hover:opacity-100 transition-opacity">
-              <img src={tool.logo} alt={tool.name} className="h-10 w-auto object-contain" />
-              <span className="text-4xl font-display font-black text-light tracking-tighter italic select-none">
+            <div key={`${tool.name}-${i}`} className="flex items-center gap-10 group opacity-40 hover:opacity-100 transition-opacity">
+              <img src={tool.logo} alt={tool.name} className="h-16 w-auto object-contain" />
+              <span className="text-6xl font-display font-black text-light tracking-tighter italic select-none">
                 {tool.name}
               </span>
             </div>
