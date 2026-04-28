@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
 
 const tools = [
-  { name: 'CLOUDFLARE', logo: './src/public/cloudflare.png' },
-  { name: 'RED HAT', logo: './src/public/Red_Hat_logo.svg.png' },
-  { name: 'CHECK POINT', logo: './src/public/check.png' },
-  { name: 'KALI LINUX', logo: './src/public/Kali-dragon-icon.svg.png' },
-  { name: 'BURP SUITE', logo: './src/public/burp-suite.jpg' },
+  { name: 'CLOUDFLARE', logo: '/cloudflare.png' },
+  { name: 'RED HAT', logo: '/Red_Hat_logo.svg.png' },
+  { name: 'CHECK POINT', logo: '/check.png' },
+  { name: 'KALI LINUX', logo: '/Kali-dragon-icon.svg.png' },
+  { name: 'BURP SUITE', logo: '/burp-suite.jpg' },
 ];
 
 export default function StackTools() {
